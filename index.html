@@ -244,6 +244,8 @@
       cursor: pointer;
     }
     .btn-primary:hover { opacity: .88; transform: translateY(-1px); }
+    .btn-primary svg { transition: transform .35s ease; }
+    .btn-primary:hover svg { transform: translateX(5px); }
     .btn-secondary {
       display: inline-flex;
       align-items: center;
@@ -703,7 +705,8 @@
       transition: color .2s;
     }
     .demo-link:hover { color: var(--text); }
-    .demo-link::after { content: '→'; }
+    .demo-link::after { content: '→'; display: inline-block; transition: transform .35s ease; }
+    .demo-link:hover::after { transform: translateX(5px); }
 
     /* ─────────────────────────────────────────
        PAGE BOTTOM GRADIENT WRAPPER
