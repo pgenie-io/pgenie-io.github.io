@@ -261,6 +261,13 @@
       transition: color .2s, border-color .2s, background .2s, transform .15s;
     }
     .btn-secondary:hover { color: var(--text); border-color: var(--border-2); background: rgba(255,255,255,.04); transform: translateY(-1px); }
+    .btn-secondary svg { overflow: visible; }
+    .btn-secondary .demo-arrow {
+      transition: transform .25s cubic-bezier(.4,0,.2,1);
+      transform-box: fill-box;
+      transform-origin: 30% 70%;
+    }
+    .btn-secondary:hover .demo-arrow { transform: translate(4px, -4px); }
 
     /* ─────────────────────────────────────────
        FEATURES STRIP
@@ -1005,7 +1012,10 @@
         </a>
         <a href="https://github.com/pgenie-io/demo" class="btn-secondary" target="_blank" rel="noopener">
           View demo
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+            <path class="demo-arrow" d="M15 3h6v6M10 14L21 3"/>
+          </svg>
         </a>
       </div>
     </div>
