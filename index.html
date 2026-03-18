@@ -835,6 +835,18 @@
       background: var(--gold-dim) !important;
     }
     .nav-gh-star svg { flex-shrink: 0; }
+    /* GitHub star animation: rotate 72° (1/5 of a circle) and scale on hover */
+    .nav-gh-star svg,
+    .github-star-btn svg {
+      transform-box: fill-box;
+      transform-origin: 50% 50%;
+      transition: transform .35s cubic-bezier(.4,0,.2,1);
+      will-change: transform;
+    }
+    .nav-gh-star:hover svg,
+    .github-strip-card:hover .github-star-btn svg {
+      transform: rotate(72deg) scale(1.18);
+    }
 
     /* ─────────────────────────────────────────
        GITHUB STAR STRIP
