@@ -5,7 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pGenie — SQL-first tooling for PostgreSQL</title>
   <meta name="description" content="pGenie validates SQL, manages indexes, and generates type-safe SDKs for PostgreSQL. Deterministic, reproducible, correct-by-construction." />
-  <link rel="icon" href="static/logo-icon.svg" type="image/svg+xml" />
+  <!-- Favicon that switches based on user's color scheme: dark -> logo-icon.svg, light -> logo-icon-dark.svg -->
+  <link id="favicon" rel="icon" href="static/logo-icon.svg" type="image/svg+xml" />
+  <script>
+    (function(){
+      var darkHref = 'static/logo-icon.svg';
+      var lightHref = 'static/logo-icon-dark.svg';
+      function setIcon(href){
+        var el = document.getElementById('favicon');
+        if(!el){
+          el = document.createElement('link');
+          el.id = 'favicon';
+          el.rel = 'icon';
+          document.head.appendChild(el);
+        }
+        if(el.getAttribute('href') !== href) el.setAttribute('href', href);
+      }
+      var mq = window.matchMedia('(prefers-color-scheme: dark)');
+      setIcon(mq.matches ? darkHref : lightHref);
+      if(mq.addEventListener) mq.addEventListener('change', function(e){ setIcon(e.matches ? darkHref : lightHref); });
+      else if(mq.addListener) mq.addListener(function(e){ setIcon(e.matches ? darkHref : lightHref); });
+    })();
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
