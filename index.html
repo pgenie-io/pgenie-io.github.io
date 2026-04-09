@@ -831,7 +831,10 @@
       .fs-item:last-child { border-bottom: none; }
     }
     @media (max-width: 640px) {
-      .nav-links a:not(.nav-cta) { display: none; }
+      /* Hide all nav links on very small screens, but keep the GitHub star visible
+         so the collapsed header shows the star button instead of Install. */
+      .nav-links a { display: none; }
+      .nav-links .nav-gh-star { display: inline-flex; }
       .cards-grid { grid-template-columns: 1fr; }
       .features-strip-inner { grid-template-columns: 1fr 1fr; }
     }
