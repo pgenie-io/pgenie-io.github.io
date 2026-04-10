@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title>pGenie social preview</title>
+  <desc>SQL-first PostgreSQL tooling that validates SQL, manages indexes, and generates type-safe SDKs.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#080b0f" />
+      <stop offset="100%" stop-color="#101725" />
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="30%" cy="20%" r="55%">
+      <stop offset="0%" stop-color="#d4a547" stop-opacity="0.34" />
+      <stop offset="55%" stop-color="#d4a547" stop-opacity="0.10" />
+      <stop offset="100%" stop-color="#d4a547" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="blueGlow" cx="80%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#5b8af5" stop-opacity="0.25" />
+      <stop offset="60%" stop-color="#5b8af5" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#5b8af5" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a547" />
+      <stop offset="45%" stop-color="#e8a87c" />
+      <stop offset="100%" stop-color="#8db7ff" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bg)" />
+  <rect x="52" y="52" width="1096" height="526" rx="34" fill="#0e1117" fill-opacity="0.92" stroke="#ffffff" stroke-opacity="0.08" />
+  <circle cx="180" cy="120" r="220" fill="url(#goldGlow)" />
+  <circle cx="1020" cy="520" r="260" fill="url(#blueGlow)" />
+
+  <rect x="104" y="102" width="282" height="44" rx="22" fill="#131a23" stroke="#d4a547" stroke-opacity="0.28" />
+  <circle cx="127" cy="124" r="6" fill="#d4a547" />
+  <text x="144" y="130" fill="#d4a547" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700">SQL-first PostgreSQL tooling</text>
+
+  <text x="104" y="228" fill="#ffffff" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="800" letter-spacing="-2">pGenie</text>
+  <text x="104" y="294" fill="url(#titleGrad)" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Validate SQL. Manage indexes.</text>
+  <text x="104" y="342" fill="#e8edf2" font-family="Arial, Helvetica, sans-serif" font-size="34" font-weight="700">Generate type-safe SDKs for PostgreSQL.</text>
+  <text x="104" y="388" fill="#8b95a1" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="400">Deterministic, reproducible, correct-by-construction.</text>
+
+  <g transform="translate(104 438)">
+    <rect x="0" y="0" width="144" height="46" rx="23" fill="#141920" stroke="#5b8af5" stroke-opacity="0.26" />
+    <text x="72" y="29" fill="#9fc0ff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Migrations</text>
+
+    <rect x="160" y="0" width="126" height="46" rx="23" fill="#141920" stroke="#5b8af5" stroke-opacity="0.26" />
+    <text x="223" y="29" fill="#9fc0ff" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">Queries</text>
+
+    <rect x="300" y="0" width="122" height="46" rx="23" fill="#141920" stroke="#d4a547" stroke-opacity="0.28" />
+    <text x="361" y="29" fill="#f0c86b" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">SDKs</text>
+
+    <rect x="440" y="0" width="176" height="46" rx="23" fill="#131f18" stroke="#34d399" stroke-opacity="0.22" />
+    <text x="528" y="29" fill="#7ce5bb" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" text-anchor="middle">pgn generate</text>
+  </g>
+
+  <g transform="translate(818 108)">
+    <rect x="0" y="0" width="274" height="312" rx="30" fill="#10151d" stroke="#ffffff" stroke-opacity="0.07" />
+    <rect x="26" y="26" width="222" height="18" rx="9" fill="#1a2230" />
+    <rect x="26" y="60" width="150" height="12" rx="6" fill="#233041" />
+    <rect x="26" y="86" width="198" height="12" rx="6" fill="#233041" />
+    <rect x="26" y="112" width="176" height="12" rx="6" fill="#233041" />
+    <rect x="26" y="152" width="216" height="66" rx="18" fill="#0c1118" stroke="#d4a547" stroke-opacity="0.16" />
+    <text x="134" y="193" fill="#d4a547" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" text-anchor="middle">Correct by design</text>
+    <rect x="26" y="236" width="104" height="14" rx="7" fill="#233041" />
+    <rect x="26" y="260" width="156" height="14" rx="7" fill="#233041" />
+  </g>
+</svg>
