@@ -1129,7 +1129,7 @@
       <h1>Write SQL.<br /><span>Ship confidence.</span></h1>
       <p class="hero-tagline">
         pGenie validates SQL, manages indexes, and generates <strong>type-safe client SDKs</strong><br />
-        — all derived from the migrations and queries in plain SQL.
+        all derived from the migrations and queries in <strong>plain SQL</strong>
       </p>
       <div class="hero-pills-spacer" aria-hidden="true"></div>
       <div class="hero-actions">
@@ -1257,7 +1257,7 @@
         <div class="result-box-icon">✨</div>
         <div class="result-box-text">
           <strong>Result: a clean, typed API derived from the database you actually run</strong>
-          <p>No manual parameter wiring. No guessed nullability. No decoder boilerplate. Just a correct-by-construction client API you can call directly from application code — with types inferred from your real PostgreSQL schema.</p>
+          <p>No manual parameter wiring. No guessed nullability. No decoder boilerplate. Just a correct-by-construction client API you can call directly from application code - with types inferred from your real PostgreSQL schema.</p>
         </div>
       </div>
     </div>
@@ -1289,13 +1289,13 @@
         <div class="card">
           <div class="card-icon">🛡️</div>
           <div class="card-title">Prevent shipping migrations that break production</div>
-          <p class="card-desc">Migrations and queries evolve together — until they don't. pGenie applies migrations and analyzes queries in the resulting schema, so you catch breaking changes in CI instead of after deploy.</p>
+          <p class="card-desc">Migrations and queries evolve together - until they don't. pGenie applies migrations and analyzes queries in the resulting schema, so you catch breaking changes in CI instead of after deploy.</p>
         </div>
 
         <div class="card">
           <div class="card-icon">🤖</div>
           <div class="card-title">Make AI-generated SQL safe to ship</div>
-          <p class="card-desc">LLMs are great at drafting SQL. pGenie is how you <strong style="color:var(--text)">verify</strong> it. Use an LLM to propose a query, migration, or refactor — then run pGenie to prove it against the real schema.</p>
+          <p class="card-desc">LLMs are great at drafting SQL. pGenie is how you <strong style="color:var(--text)">verify</strong> it. Use an LLM to propose a query, migration, or refactor - then run pGenie to prove it against the real schema.</p>
         </div>
 
         <div class="card">
@@ -1312,7 +1312,7 @@
         <div class="card">
           <div class="card-icon">🔬</div>
           <div class="card-title">Catch SQL issues at generation time</div>
-          <p class="card-desc">Stop discovering bugs at runtime or in production. Move failures to generation time — wrong types, nullability, result shapes, performance issues (sequential scans), and schema mismatches are caught before code ships.</p>
+          <p class="card-desc">Stop discovering bugs at runtime or in production. Move failures to generation time - wrong types, nullability, result shapes, performance issues (sequential scans), and schema mismatches are caught before code ships.</p>
         </div>
 
         <div class="card">
@@ -1347,11 +1347,11 @@
             <div class="compare-panel-title">Impressive output, costly failures</div>
           </div>
           <ul class="compare-list">
-            <li><span class="icon">✗</span><div><strong>Non-deterministic</strong> — the same prompt can produce different SQL across runs.</div></li>
-            <li><span class="icon">✗</span><div><strong>Hard to reproduce</strong> — model, version, prompt, and temperature become build inputs.</div></li>
-            <li><span class="icon">✗</span><div><strong>Unverifiable assumptions</strong> — column types, nullability, and result shapes can be subtly wrong.</div></li>
-            <li><span class="icon">✗</span><div><strong>Schema drift</strong> — a later migration can silently invalidate earlier AI-generated queries.</div></li>
-            <li><span class="icon">✗</span><div><strong>Operational risk</strong> — errors surface at runtime or during deploy, not at PR time.</div></li>
+            <li><span class="icon">✗</span><div><strong>Non-deterministic</strong> - the same prompt can produce different SQL across runs.</div></li>
+            <li><span class="icon">✗</span><div><strong>Hard to reproduce</strong> - model, version, prompt, and temperature become build inputs.</div></li>
+            <li><span class="icon">✗</span><div><strong>Unverifiable assumptions</strong> - column types, nullability, and result shapes can be subtly wrong.</div></li>
+            <li><span class="icon">✗</span><div><strong>Schema drift</strong> - a later migration can silently invalidate earlier AI-generated queries.</div></li>
+            <li><span class="icon">✗</span><div><strong>Operational risk</strong> - errors surface at runtime or during deploy, not at PR time.</div></li>
           </ul>
         </div>
 
@@ -1361,11 +1361,11 @@
             <div class="compare-panel-title">Deterministic verification against reality</div>
           </div>
           <ul class="compare-list">
-            <li><span class="icon">✓</span><div><strong>Verified against a real schema</strong> — migrations execute; types are inferred from the actual DB state.</div></li>
-            <li><span class="icon">✓</span><div><strong>Reproducible builds</strong> — generator inputs can be frozen and artifacts regenerated identically in CI.</div></li>
-            <li><span class="icon">✓</span><div><strong>Correct-by-construction APIs</strong> — typed parameters and results derived from analysis, not guesses.</div></li>
-            <li><span class="icon">✓</span><div><strong>Regression detection</strong> — if a migration breaks a query, generation fails early in the PR.</div></li>
-            <li><span class="icon">✓</span><div><strong>Fully auditable</strong> — outputs are a deterministic function of migrations, queries, generator versions, and config.</div></li>
+            <li><span class="icon">✓</span><div><strong>Verified against a real schema</strong> - migrations execute; types are inferred from the actual DB state.</div></li>
+            <li><span class="icon">✓</span><div><strong>Reproducible builds</strong> - generator inputs can be frozen and artifacts regenerated identically in CI.</div></li>
+            <li><span class="icon">✓</span><div><strong>Correct-by-construction APIs</strong> - typed parameters and results derived from analysis, not guesses.</div></li>
+            <li><span class="icon">✓</span><div><strong>Regression detection</strong> - if a migration breaks a query, generation fails early in the PR.</div></li>
+            <li><span class="icon">✓</span><div><strong>Fully auditable</strong> - outputs are a deterministic function of migrations, queries, generator versions, and config.</div></li>
           </ul>
         </div>
       </div>
