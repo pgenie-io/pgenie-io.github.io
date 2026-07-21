@@ -17,6 +17,7 @@
 !/sitemap.xml
 !/sitemap-index.xml
 !/robots.txt
+!/llms.txt
 
 # Unignore subtrees:
 !/.github/

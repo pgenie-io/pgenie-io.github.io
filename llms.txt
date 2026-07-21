@@ -1,0 +1,20 @@
+# pGenie
+
+> pGenie is a SQL-first code generator for PostgreSQL: validates SQL, manages indexes, and generates type-safe client SDKs from plain migrations and queries.
+
+## Docs
+
+- [Full documentation index](https://pgenie.io/docs/llms.txt): complete machine-readable index of guides, reference, and tutorials
+- [Full documentation content](https://pgenie.io/docs/llms-full.txt): complete machine-readable content of all docs pages
+- [Documentation](https://pgenie.io/docs/): human-readable docs site
+
+## Comparisons
+
+- [pGenie vs sqlc](https://pgenie.io/docs/comparisons/sqlc/)
+- [pGenie vs jOOQ](https://pgenie.io/docs/comparisons/jooq/)
+- [pGenie vs Spring Data JDBC](https://pgenie.io/docs/comparisons/spring-data-jdbc/)
+
+## Source
+
+- [pGenie repository](https://github.com/pgenie-io/pgenie)
+- [Demo project](https://github.com/pgenie-io/demo)
