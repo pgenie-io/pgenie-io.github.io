@@ -15,6 +15,7 @@
 !/index.html
 !/CNAME
 !/sitemap.xml
+!/sitemap-index.xml
 !/robots.txt
 
 # Unignore subtrees:
